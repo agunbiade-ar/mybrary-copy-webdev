@@ -1,0 +1,20 @@
+{
+  "name": "mybrary_copy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^15.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-layouts": "^1.0.0",
+    "mongoose": "^6.1.9"
+  }
+}
