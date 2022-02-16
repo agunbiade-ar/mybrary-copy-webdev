@@ -10,6 +10,7 @@ const expressLayouts = require('express-ejs-layouts')
 let port = (process.env.PORT != undefined) ? process.env.PORT : 3000; 
 const indexRouter = require('./routes/index')
 const authorsRouter = require('./routes/authors')
+const booksRouter = require('./routes/books')
 
 app.set("view engine", "ejs")
 app.set('layout', 'layouts/layout')
@@ -26,6 +27,7 @@ db.once('open', ()=> console.log("Connected to Mongoose"))
 
 app.use('/', indexRouter)
 app.use('/authors', authorsRouter)
+app.use('/books', booksRouter)
 
 app.listen(port, function(){
     console.log("Running on port " +port)
